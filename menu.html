@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700"
+      rel="stylesheet"
+    />
+    <title>ZHIZU Cafe</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="hamburger-menu">
+        <div class="menu-line"></div>
+      </div>
+
+      <div class="navbar-navigation">
+        <div class="navbar-navigation-left">
+          <img
+            src="./images/nav-img-1.jpeg"
+            alt="nav-img-1"
+            class="left-image left-image-1"
+          />
+          <img
+            src="./images/nav-img-2.jpeg"
+            alt="nav-img-2"
+            class="left-image left-image-2"
+          />
+          <img
+            src="./images/nav-img-3.jpeg"
+            alt="nav-img-3"
+            class="left-image left-image-3"
+          />
+        </div>
+        <div class="navbar-navigation-right">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-list-link">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./menu.html" class="nav-list-link">Menu</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./about.html" class="nav-list-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header-content header-menu">
+      <header class="header">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i></a>
+        <div class="title">
+          <h1 class="main-title">zhizu</h1>
+          <p class="sub-title">cafe</p>
+        </div>
+      </header>
+      <div class="main-header">
+        <h1 class="main-heading">Menu</h1>
+      </div>
+      <div class="menu">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Price</th> 
+          </tr>
+          <tr>
+            <td>pancake</td>
+            <td>NTD 45</td>
+          </tr>
+          <tr>
+            <td>black tea</td>
+            <td>NTD 20</td>
+          </tr>
+          <tr>
+            <td>Burito</td>
+            <td>NTD 50</td>
+          </tr>
+		   <tr>
+            <td>pizza</td>
+            <td>NTD 100</td>
+          </tr>
+		   <tr>
+            <td>salmon</td>
+            <td>NTD 80</td>
+          </tr>
+		   <tr>
+            <td>salad</td>
+            <td>NTD 45</td>
+          </tr>
+		   <tr>
+            <td>steak</td>
+            <td>NTD 130</td>
+          </tr>
+        </table>
+      </div>
+      <audio src="./asset/music.mp3" controls loop autoplay style="position: fixed; z-index: 1000; top: 5%; left: 3%;"/>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-header">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i></a>
+        <div class="footer-title">
+          <h1 class="main-name">ZHIZU</h1>
+          <p class="sub-name">Cafe</p>
+        </div>
+      </div>
+
+      <div class="footer-social-media">
+        <ul class="social-media">
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-google-plus-square"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright">
+        <p class="footer-copyright-paragraph">
+          &copy; Copyright.曾繁浩. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script>
+      const navbar = document.querySelector(".navbar");
+      const menuButton = navbar.querySelector(".hamburger-menu");
+      const leftNav = navbar.querySelector(".navbar-navigation-left");
+      const rightNav = navbar.querySelector(".navbar-navigation-right");
+      menuButton.addEventListener("click", () => {
+        leftNav.classList.toggle("open");
+        rightNav.classList.toggle("open");
+        menuButton.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
